@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: linear-gradient(135deg, #0f0c29, #302b63, #00c6ff);
+	font-family: Arial, sans-serif;
+	color: #fff;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 12px;
+	padding: 2rem;
+	width: 320px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+	text-align: center;
+}
+
+/* Title at the top */
+.title {
+	font-size: 1.5rem;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 1.5rem;
+}
+
+/* Section that displays the generated password */
+.password-section {
+	margin-bottom: 1.5rem;
+	text-align: left;
+}
+
+.password-section label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-size: 0.9rem;
+	opacity: 0.8;
+}
+
+/* Container for the password text and copy button */
+.password-display {
+	border: none;
+	color: #fff;
+	padding: 0.5rem 0.8rem;
+	cursor: pointer;
+	font-size: 0.9rem;
+	transition: background-color 0.3s;
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.password-display input {
+	flex: 1;
+	border: none;
+	border-radius: 10px;
+	padding: 0.5rem 0.8rem;
+	background-color: rgba(128, 128, 128, 0.292);
+	color: #fff;
+	font-size: 0.9rem;
+	outline: none;
+}
+
+.copy-btn {
+	background: #ff0080;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	transition: background 0.3s;
+}
+
+.password-display .copy-btn:hover {
+	background-color: #e00070;
+}
+
+/* Slider (Password length) */
+#length {
+	width: 100%;
+	justify-content: center;
+}
+
+.length-section {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	gap: 5px;
+}
+
+.length-label {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+input[type="range"] {
+	width: 200px;
+}
+
+#length-value {
+	justify-content: right;
+	font-weight: bold;
+	min-width: 30px;
+}
+
+/* Options (checkboxes) */
+.options {
+	text-align: left;
+	margin-bottom: 1rem;
+}
+
+.options label {
+	display: block;
+	margin-bottom: 0.3rem;
+	font-size: 0.9rem;
+	cursor: pointer;
+}
+
+/* Strength indicator */
+.strength-section {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	font-size: 0.9rem;
+	opacity: 0.8;
+}
+
+.strength-indicator {
+	width: 20px;
+	height: 20px;
+	background-color: #ff0080;
+	border-radius: 50%;
+	margin-left: 1rem;
+	box-shadow: 0 0 8px 2px #ff0080;
+}
+
+/* Generate button */
+.generate-btn {
+	background-color: #ff0080;
+	border: none;
+	border-radius: 8px;
+	color: #fff;
+	padding: 0.75rem 1.5rem;
+	cursor: pointer;
+	font-size: 1rem;
+	transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+	width: 100%;
+	font-weight: bold;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.generate-btn:hover {
+	background-color: #e60073;
+	transform: translateY(-2px);
+	box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.generate-btn:active {
+	transform: translateY(0);
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
