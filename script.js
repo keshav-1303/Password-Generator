@@ -82,6 +82,7 @@ generateBtn.addEventListener("click", () => {
     const pwd = generatePassword();
     passwordEl.value = pwd;
     const strength = evaluateStrength(pwd);
+    passwordEl.style.color = "white";
     updateStrengthIndicator(strength);
 });
 
